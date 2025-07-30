@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <View
+            style="@style/LineViewStyle"
+            />
+
+        <TextView
+            android:id="@+id/androidSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/android_settings"
+            tools:ignore="RtlSymmetry"
+            />
+
+        <View
+            style="@style/LineViewStyle"
+            />
+
+        <TextView
+            android:id="@+id/engSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/eng_settings"
+            tools:ignore="RtlSymmetry"
+            />
+
+        <View
+            style="@style/LineViewStyle"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <!--        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/startstop_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/StartStopSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle"
+                    android:entries='@array/spinnerItemsOnOff' />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/startstop_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/autoHoldSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/autohold_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/restoreDriveModeSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/drivemode_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/elkaDisableSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/elka_disable_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/windowScreenServicePosSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/window_screen_service_pos_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+
+            <View
+                style="@style/LineViewStyle"
+                />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/intelligentFuelSaveSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/intelligent_fuel_save_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/panoramaCurtainStartSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/panorama_curtain_start_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/brightnessReverseSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/brightness_reverse_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/camReverseSpeed_Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/spinnerStyle"
+                        android:layout_marginBottom="5dp"
+                        android:entries='@array/ItemsCamReverseSpeed' />
+
+                    <Spinner
+                        android:id="@+id/camReverseTime_Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/spinnerStyle"
+                        android:entries='@array/ItemsCamReverseTime' />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/cam_reverse_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/keys_warning"
+                    android:textColor="@color/warning"
+                    android:textSize = "20sp"
+                    tools:ignore="RtlSymmetry" />
+
+            <View
+                style="@style/LineViewStyle"
+                />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/mediaKeysSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/mediaKeys_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/srcKeySwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5src_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/srcKeyUpdated_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/srcKeyOldSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/srcKey_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/vaKeySwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaKey_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/passDisplayOffSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/pass_display_off_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/passDisplayOffNoPassSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView50_np"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/pass_display_off_nopass_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/debugToastSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView5_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/debug_toast_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/volumeOnStartSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/volume_onstart_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+                <TextView
+                    android:id="@+id/textView55_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/keys_press_warning"
+                    android:textColor="@color/warning"
+                    android:textSize="20sp"
+                    tools:ignore="RtlSymmetry" />
+
+            <View
+                style="@style/LineViewStyle"
+                />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcPressed1Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/src1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcApp1Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcApp1Spinner"
+                    style="@style/spinnerStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/app1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcIntent1Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <EditText
+                    android:id="@+id/srcIntent1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/intent1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcPackage1Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcPackage1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView7_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/package1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcPressed2Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/src2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcApp2Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcApp2Spinner"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/app2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcIntent2Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcIntent2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/intent2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcPackage2Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcPackage2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/package2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:id="@+id/srcPressed3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcPressed3Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/src3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcApp3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcApp3Spinner"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView9_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/app3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcIntent3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcIntent3EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/intent3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcPackage3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcPackage3EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/package3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+
+
+
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:id="@+id/srcPressedLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcPressedLongSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView8_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/srcLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcAppLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/srcAppLongSpinner"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView8_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/appLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcIntentLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcIntentLongEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/intentLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/srcPackageLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/srcPackageLongEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/packageLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+
+
+
+
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaPressed1Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView6va"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/va1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaApp1Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaApp1Spinner"
+                    style="@style/spinnerStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/textView7va"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaapp1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaIntent1Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaIntent1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView11_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaintent1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaPackage1Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaPackage1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView11_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vapackage1_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaPressed2Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView6va2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/va2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaApp2Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaApp2Spinner"
+                    style="@style/spinnerStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/textView7va2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaapp2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaIntent2Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaIntent2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView11_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaintent2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaPackage2Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaPackage2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView11_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vapackage2_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaPressed3Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView6va3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/va3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaApp3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaApp3Spinner"
+                    style="@style/spinnerStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/textView7va3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaapp3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaIntent3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaIntent3EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView11_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaintent3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaPackage3Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaPackage3EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView11_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vapackage3_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <View
+                style="@style/LineViewStyle"
+                />
+
+
+
+
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaPressedLongSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView8va"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaAppLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/vaAppLongSpinner"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle" />
+
+                <TextView
+                    android:id="@+id/textView9va"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaappLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaIntentLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaIntentLongEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView12_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vaintentLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/vaPackageLongRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/vaPackageLongEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textView12_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/vapackageLong_settings"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+            <View
+                style="@style/LineViewStyle"
+                />
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/importSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/import_settings"
+                android:textColor="@color/warning"
+                tools:ignore="RtlSymmetry"
+                android:background="@drawable/rectangle"
+                />
+            <TextView
+                android:id="@+id/exportSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/export_settings"
+                android:textColor="@color/warning"
+                tools:ignore="RtlSymmetry"
+                android:background="@drawable/rectangle"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

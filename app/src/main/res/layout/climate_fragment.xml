@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:id="@+id/climateGCleanRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/climateGCleanSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_gclean_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateStart_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateStart' />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_start_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateStart_Auto_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/climateStart_Auto_Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_start_auto_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateStart_Speed_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateStart_Speed_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateModes' />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_speed_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/climateStart_Mode_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateStart_Mode_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateModes' />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_mode_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/climateStart_Auto128_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/climateStart_Auto128_Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_start_auto128_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/climateStart_Mode128_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateStart_Mode128_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateModes' />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_mode128_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateStartAC_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateStart' />
+
+                <TextView
+                    android:id="@+id/textView34ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_start_ac_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:id="@+id/climateDefrozeTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateDefrozeTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateDefrozeTemps' />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_defroze_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateDefrozePeriodTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateDefrozePeriodTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateDefrozeTemps' />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_defroze_period_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateDefrozePeriod_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateDefrozePeriod_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateDefrozePeriods' />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_defroze_period_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:id="@+id/climateDefrozeRearTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateDefrozeRearTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateDefrozeTemps' />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_defroze_rear_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+
+            <TableRow
+                android:id="@+id/climateSeatDr_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateSeatDr_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatModes' />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_dr_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatDrTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateSeatDrTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatTemps' />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_dr_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatDr1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateSeatDr1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatModes' />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_dr1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatDrTemp1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateSeatDrTemp1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatTemps' />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_dr_temp1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatDrOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateSeatDrOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatModes' />
+
+                <TextView
+                    android:id="@+id/textView62_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_dr_out_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatDrTempOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateSeatDrTempOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatTemps' />
+
+                <TextView
+                    android:id="@+id/textView63_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_dr_tout_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:id="@+id/climateSeatPass_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateSeatPass_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatModes' />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_pass_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatPassTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateSeatPassTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatTemps' />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_pass_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatPass1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateSeatPass1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatModes' />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_pass1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatPassTemp1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateSeatPassTemp1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatTemps' />
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_pass_temp1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatPassOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateSeatPassOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatModes' />
+
+                <TextView
+                    android:id="@+id/textView72_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_pass_out_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateSeatPassTempOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateSeatPassTempOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateSeatTemps' />
+
+                <TextView
+                    android:id="@+id/textView73_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_seat_pass_tout_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:id="@+id/climateWheel_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateWheel_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelModes' />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_wheel_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateWheelTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateWheelTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelTemps' />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_wheel_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateWheel1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateWheel1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelModes' />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_wheel1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateWheelTemp1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateWheelTemp1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelTemps' />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_wheel_temp1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/climateWheelOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateWheelOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelModes' />
+
+                <TextView
+                    android:id="@+id/textView62_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_wheel_out_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateWheelTempOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateWheelTempOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelTemps' />
+
+                <TextView
+                    android:id="@+id/textView63_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_wheel_tout_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:id="@+id/climateVentDr_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateVentDr_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentModes' />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_dr_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentDrTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateVentDrTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentTemps' />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_dr_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentDr1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateVentDr1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentModes' />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_dr1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentDrTemp1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateVentDrTemp1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentTemps' />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_dr_temp1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentDrTempOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateVentDrTempOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelTemps' />
+
+                <TextView
+                    android:id="@+id/textView63_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_dr_temp_out_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentDrCorrection_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/climateVentDrCorrection_Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView44_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_dr_correction_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/tablerow_bottom_border"
+                android:layout_height="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TableRow
+                android:id="@+id/climateVentPass_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateVentPass_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentModes' />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_pass_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentPassTemp_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateVentPassTemp_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentTemps' />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_pass_temp_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentPass1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry"
+
+                >
+
+                <Spinner
+                    android:id="@+id/climateVentPass1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentModes' />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_pass1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentPassTemp1_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateVentPassTemp1_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateVentTemps' />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_pass_temp1_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentPassTempOut_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <Spinner
+                    android:id="@+id/climateVentPassTempOut_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/ItemsClimateWheelTemps' />
+
+                <TextView
+                    android:id="@+id/textView63_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_pass_temp_out_settings"
+                    tools:ignore="RtlSymmetry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/climateVentPassCorrection_TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="RtlSymmetry">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/climateVentPassCorrection_Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView49_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/climate_vent_pass_correction_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

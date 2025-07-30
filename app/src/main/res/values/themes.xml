@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MConfig" parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="android:textSize">29sp</item>
+    </style>
+
+    <style name="switchStyle">
+
+        <item name="android:scaleX">2</item>
+        <item name="android:scaleY">2</item>
+        <item name="android:paddingStart">25dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingEnd">25dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="spinnerStyle">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+
+    <style name="tabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">29sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="LineViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/tablerow_bottom_border</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+
+
+
+</resources>

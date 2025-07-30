@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text">#FFadadae</color>
+    <color name="warning">#639D00</color>
+    <color name="warningPressed">#80639D00</color>
+    <color name="tabItem">#b3ffffff</color>
+    <color name="select">#FF313339</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

@@ -1,0 +1,487 @@
+<resources>
+    <string name="app_name">MConfig</string>
+    <string name="service_init_name">MConfig init...</string>
+    <string name="warning_accessibility">Для работы некоторых функций приложения необходимо включить Сервис спецвозможностей в Macrodroid</string>
+
+    <string name="files_handler">MConfig</string>
+    <string name="service_started">MConfig... started</string>
+    <string name="restore_drive_mode">MConfig... restore drive mode</string>
+    <string name="save_drive_mode">MConfig... save drive mode</string>
+
+    <string name="enable_service">Включить сервис</string>
+    <string name="ignition_mode_dot">Режим зажигания:</string>
+    <string name="startstop_mode_dot">Режим Start-Stop:</string>
+    <string name="auto_speed_dot">Скорость автомобиля (км/ч):</string>
+    <string name="rpm_value_dot">Число оборотов (об./мин):</string>
+    <string name="ambient_temp_dot">Наружная температура (°C):</string>
+    <string name="int_temp_dot">Температура в салоне(°C):</string>
+    <string name="fuel_value_dot">Уровень топлива (л):</string>
+    <string name="oil_level_dot">Уровень масла:</string>
+    <string name="seat_pass_status_dot">Сиденье пассажира:</string>
+    <string name="gear_status_dot">Передача КПП:</string>
+    <string name="dayNight_dot">Режим освещения:</string>
+
+
+    <string name="import_settings">Импорт настроек из папки Downloads</string>
+    <string name="export_settings">Экспорт настроек</string>
+
+    <string name="android_settings">Настройки Android</string>
+    <string name="eng_settings">Инженерное меню</string>
+    <string name="src1_settings">Действие по одиночному нажатию SRC</string>
+    <string name="app1_settings">Приложение для действия по одиночному нажатию SRC</string>
+    <string name="intent1_settings">Действие интента по одиночному нажатию SRC</string>
+    <string name="package1_settings">Имя пакета для приема интента по одиночному нажатию SRC</string>
+    <string name="src2_settings">Действие по двойному нажатию SRC</string>
+    <string name="app2_settings">Приложение для действия по двойному нажатию SRC</string>
+    <string name="intent2_settings">Действие интента по двойному нажатию SRC</string>
+    <string name="package2_settings">Имя пакета для приема интента по двойному нажатию SRC</string>
+    <string name="src3_settings">Действие по тройному нажатию SRC</string>
+    <string name="app3_settings">Приложение для действия по тройному нажатию SRC</string>
+    <string name="intent3_settings">Действие интента по тройному нажатию SRC</string>
+    <string name="package3_settings">Имя пакета для приема интента по тройному нажатию SRC</string>
+    <string name="srcLong_settings">Действие по долгому нажатию SRC</string>
+    <string name="appLong_settings">Приложение для действия по долгому нажатию SRC</string>
+    <string name="intentLong_settings">Действие интента по долгому нажатию SRC</string>
+    <string name="packageLong_settings">Имя пакета для приема интента по долгому нажатию SRC</string>
+
+    <string name="va1_settings">Действие по одиночному нажатию VoiceAssist</string>
+    <string name="vaapp1_settings">Приложение для действия по одиночному нажатию VoiceAssist</string>
+    <string name="vaintent1_settings">Действие интента по одиночному нажатию VoiceAssist</string>
+    <string name="vapackage1_settings">Имя пакета для приема интента по одиночному нажатию VoiceAssist</string>
+
+    <string name="va2_settings">Действие по двойному нажатию VoiceAssist</string>
+    <string name="vaapp2_settings">Приложение для действия по двойному нажатию VoiceAssist</string>
+    <string name="vaintent2_settings">Действие интента по двойному нажатию VoiceAssist</string>
+    <string name="vapackage2_settings">Имя пакета для приема интента по двойному нажатию VoiceAssist</string>
+
+    <string name="va3_settings">Действие по тройному нажатию VoiceAssist</string>
+    <string name="vaapp3_settings">Приложение для действия по тройному нажатию VoiceAssist</string>
+    <string name="vaintent3_settings">Действие интента по тройному нажатию VoiceAssist</string>
+    <string name="vapackage3_settings">Имя пакета для приема интента по тройному нажатию VoiceAssist</string>
+
+    <string name="vaLong_settings">Действие по долгому нажатию VoiceAssist</string>
+    <string name="vaappLong_settings">Приложение для действия по долгому нажатию VoiceAssist</string>
+    <string name="vaintentLong_settings">Действие интента по долгому нажатию VoiceAssist</string>
+    <string name="vapackageLong_settings">Имя пакета для приема интента по долгому нажатию VoiceAssist</string>
+
+    <string name="startstop_settings">Настройки управления Start-Stop</string>
+    <string name="autohold_settings">Настройки управления Auto-Hold</string>
+    <string name="drivemode_settings">Восстанавливать режим вождения при запуске</string>
+    <string name="brightness_reverse_settings">Увеличивать яркость в ночном режиме при движении задним ходом</string>
+    <string name="elka_disable_settings">Отключить ELKA при старте</string>
+    <string name="window_screen_service_pos_settings">Сервисный режим стеклоочистителей при остановке</string>
+    <string name="intelligent_fuel_save_settings">Инт. режим экономии топлива при старте</string>
+    <string name="panorama_curtain_start_settings">Открытие шторки панорамы при старте / запуске двигателя</string>
+
+    <string name="cam_reverse_settings">Время и скорость для отключения камеры 360</string>
+    <string name="keys_warning">Внимание! \nПри управлении кнопками MConfig не отключаются штатные действия кнопок. Это не ошибка! \nДля отключения штатных действий кнопок примените скрипт "RSRC_to_ISRC_keys"</string>
+
+    <string name="keys_press_warning">Внимание! \n2–е и 3–е нажатия кнопок необходимо производить с паузой 0,5-0,8 секунды</string>
+    <string name="mediaKeys_settings">Включить управление медиа кнопками</string>
+    <string name="srcKeyUpdated_settings">Включить управление кнопкой SRC для обновленных ГУ</string>
+    <string name="srcKey_settings">Включить управление кнопкой SRC</string>
+    <string name="vaKey_settings">Включить управление кнопкой VoiceAssist</string>
+
+    <string name="pass_display_off_settings">Отключить экран пассажира</string>
+    <string name="pass_display_off_nopass_settings">Отключить экран пассажира, если пассажир отсутствует </string>
+
+    <string name="debug_toast_settings">Включить отладочные сообщения</string>
+
+    <string name="climate_gclean_settings">Включать GClean при включении режима Auto</string>
+    <string name="climate_start_settings">Настройки климата при запуске системы</string>
+
+    <string name="climate_start_auto_settings">Режим работы Auto</string>
+    <string name="climate_start_ac_settings">Настройки кондиционера при запуске системы</string>
+    <string name="climate_start_speed_settings">Скорость вентилятора</string>
+    <string name="climate_mode_settings">Режим обдува зон 1,2</string>
+    <string name="climate_start_auto128_settings">Режим работы Auto зоны 3</string>
+    <string name="climate_mode128_settings">Режим обдува зоны 3</string>
+    <string name="climate_speed_settings">Скорость вентилятора</string>
+
+    <string name="climate_defroze_temp_settings">Температура (внешняя °C) активации обогрева лобового стекла при старте</string>
+    <string name="climate_defroze_period_temp_settings">Температура (внешняя °C) активации периодического обогрева лобового стекла</string>
+    <string name="climate_defroze_period_settings">Периодичность обогрева лобового стекла</string>
+
+    <string name="climate_defroze_rear_temp_settings">Температура (внешняя °C) активации обогрева заднего стекла при старте</string>
+
+    <string name="climate_seat_dr_settings">Режим 1 подогрева сиденья водителя</string>
+    <string name="climate_seat_dr_temp_settings">Температура (салона °C) активации режима 1 подогрева сиденья водителя</string>
+    <string name="climate_seat_dr1_settings">Режим 2 подогрева сиденья водителя</string>
+    <string name="climate_seat_dr_temp1_settings">Температура (салона °C) активации режима 2 подогрева сиденья водителя</string>
+    <string name="climate_seat_dr_out_settings">Режим Z подогрева сиденья водителя</string>
+    <string name="climate_seat_dr_tout_settings">Температура (внешняя °C) активации режима Z подогрева сиденья водителя</string>
+
+    <string name="climate_seat_pass_settings">Режим 1 подогрева сиденья пассажира</string>
+    <string name="climate_seat_pass_temp_settings">Температура (салона °C) активации режима 1 подогрева сиденья пассажира</string>
+    <string name="climate_seat_pass1_settings">Режим 2 подогрева сиденья пассажира</string>
+    <string name="climate_seat_pass_temp1_settings">Температура (салона °C) активации режима 2 подогрева сиденья пассажира</string>
+    <string name="climate_seat_pass_out_settings">Режим Z подогрева сиденья пассажира</string>
+    <string name="climate_seat_pass_tout_settings">Температура (внешняя °C) активации режима Z подогрева сиденья пассажира</string>
+
+    <string name="climate_wheel_settings">Режим 1 подогрева руля</string>
+    <string name="climate_wheel_temp_settings">Температура (салона °C) активации режима 1 подогрева руля</string>
+    <string name="climate_wheel1_settings">Режим 2 подогрева руля</string>
+    <string name="climate_wheel_temp1_settings">Температура (салона °C) активации режима 2 подогрева руля</string>
+    <string name="climate_wheel_out_settings">Режим Z подогрева руля</string>
+    <string name="climate_wheel_tout_settings">Температура (внешняя °C) активации режима Z подогрева руля</string>
+
+    <string name="climate_vent_dr_settings">Режим 1 вентиляции сиденья водителя</string>
+    <string name="climate_vent_dr_temp_settings">Температура (салона °C) активации режима 1 вентиляции сиденья водителя</string>
+    <string name="climate_vent_dr1_settings">Режим 2 вентиляции сиденья водителя</string>
+    <string name="climate_vent_dr_temp1_settings">Температура (салона °C) активации режима 2 вентиляции сиденья водителя</string>
+    <string name="climate_vent_dr_temp_out_settings">Ограничение внешней температуры для работы вентиляции сиденья водителя</string>
+    <string name="climate_vent_dr_correction_settings">Включить коррекцию температур (+1° при 30мин. работы, +2° при 60мин. работы)</string>
+
+    <string name="climate_vent_pass_settings">Режим 1 вентиляции сиденья пассажира</string>
+    <string name="climate_vent_pass_temp_settings">Температура (салона °C) активации режима 1 вентиляции сиденья пассажира</string>
+    <string name="climate_vent_pass1_settings">Режим 2 вентиляции сиденья пассажира</string>
+    <string name="climate_vent_pass_temp1_settings">Температура (салона °C) активации режима 2 вентиляции сиденья пассажира</string>
+    <string name="climate_vent_pass_temp_out_settings">Ограничение внешней температуры для работы вентиляции сиденья пассажира</string>
+    <string name="climate_vent_pass_correction_settings">Включить коррекцию температур (+1° при 30мин. работы, +2° при 60мин. работы)</string>
+
+    <string name="app_start_enable_settings">Запуск приложений при включении ГУ</string>
+    <string name="app_test_settings">Тест запуска</string>
+    <string name="app_start_settings">Приложение для запуска</string>
+    <string name="app_start_activity_settings">Активити для запуска (если запуск не MAIN активити)</string>
+    <string name="app_start_delay_settings">Задержка запуска, секунд</string>
+    <string name="app_start_display_settings">Дисплей</string>
+
+    <string name="volume_onstart_settings">Громкость мультимедиа при старте ГУ</string>
+
+    <string-array name="spinnerItemsOnOff">
+        <item>---</item>
+        <item>Выключен всегда</item>
+        <item>Включен всегда</item>
+        <item>Выключен при старте</item>
+        <item>Включен при старте</item>
+    </string-array>
+
+    <string-array name="spinnerItemsSRC_1Click">
+        <item>---</item>
+        <item>Запуск приложения</item>
+        <item>Режим вождения Sport</item>
+        <item>Режим вождения Снег</item>
+        <item>Режим вождения Внедорожный</item>
+        <item>Отправка интента</item>
+        <item>Перенос на приборную панель</item>
+    </string-array>
+
+    <string-array name="spinnerItemsSRC">
+        <item>---</item>
+        <item>Запуск приложения</item>
+        <item>Режим вождения Sport</item>
+        <item>Режим вождения Снег</item>
+        <item>Режим вождения Внедорожный</item>
+        <item>Отправка интента</item>
+        <item>Режим мультимедиа</item>
+        <item>Перенос на приборную панель</item>
+    </string-array>
+
+
+    <string-array name="ItemsClimateStart">
+        <item>---</item>
+        <item>Всегда</item>
+        <item>Если не Auto</item>
+        <item>Если выключен</item>
+    </string-array>
+
+    <string-array name="ItemsCamReverseSpeed">
+        <item>---</item>
+        <item>7 км/ч</item>
+        <item>10 км/ч</item>
+        <item>12 км/ч</item>
+        <item>15 км/ч</item>
+        <item>20 км/ч</item>
+    </string-array>
+
+    <string-array name="ItemsCamReverseTime">
+        <item>---</item>
+        <item>5 сек.</item>
+        <item>7 сек.</item>
+        <item>10 сек.</item>
+        <item>15 сек.</item>
+        <item>20 сек.</item>
+        <item>30 сек.</item>
+    </string-array>
+
+    <string-array name="ItemsClimateAutoFan">
+        <item>---</item>
+        <item>Бесшумно</item>
+        <item>Тихо</item>
+        <item>Нормально</item>
+        <item>Быстро</item>
+        <item>Очень быстро</item>
+    </string-array>
+
+    <string-array name="ItemsClimateFan">
+        <item>---</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>Выкл</item>
+    </string-array>
+
+    <string-array name="ItemsClimateModes">
+        <item>---</item>
+        <item>Стекло+Лицо+Ноги</item>
+        <item>Стекло+Ноги</item>
+        <item>Лицо+Ноги</item>
+        <item>Лицо</item>
+        <item>Ноги</item>
+        <item>Стекло</item>
+        <item>Стекло+Лицо</item>
+        <item>Авто</item>
+        <item>Выкл.</item>
+    </string-array>
+
+    <string-array name="ItemsClimateAC">
+        <item>---</item>
+        <item>Вкл.</item>
+        <item>Выкл.</item>
+    </string-array>
+
+    <string-array name="ItemsClimateModes128">
+        <item>---</item>
+        <item>Лицо+Ноги</item>
+        <item>Лицо</item>
+        <item>Ноги</item>
+        <item>Выкл.</item>
+    </string-array>
+
+    <string-array name="ItemsClimateDefrozeTemps">
+        <item>---</item>
+        <item>-15</item>
+        <item>-14</item>
+        <item>-13</item>
+        <item>-12</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="ItemsClimateDefrozePeriods">
+        <item>---</item>
+        <item>15 минут</item>
+        <item>20 минут</item>
+        <item>30 минут</item>
+        <item>40 минут</item>
+        <item>60 минут</item>
+    </string-array>
+
+
+    <string-array name="ItemsClimateSeatModes">
+        <item>---</item>
+        <item>Уровень 1</item>
+        <item>Уровень 2</item>
+        <item>Уровень 3</item>
+    </string-array>
+
+    <string-array name="ItemsClimateSeatTemps">
+        <item>-15</item>
+        <item>-14</item>
+        <item>-13</item>
+        <item>-12</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="ItemsClimateWheelModes">
+        <item>---</item>
+        <item>Уровень 1</item>
+        <item>Уровень 2</item>
+        <item>Уровень 3</item>
+    </string-array>
+
+    <string-array name="ItemsClimateWheelTemps">
+        <item>-15</item>
+        <item>-14</item>
+        <item>-13</item>
+        <item>-12</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+
+    <string-array name="ItemsClimateVentModes">
+        <item>---</item>
+        <item>Уровень 1</item>
+        <item>Уровень 2</item>
+        <item>Уровень 3</item>
+    </string-array>
+
+    <string-array name="ItemsClimateVentTemps">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+    </string-array>
+
+    <string-array name="ItemsClimateVentTempsOut">
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+    </string-array>
+
+    <string-array name="spinnerDisplay">
+        <item>Основной дисплей</item>
+        <item>Дисплей пассажира</item>
+    </string-array>
+
+    <string-array name="ItemsVolumeOnStart">
+        <item>---</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+    </string-array>
+
+</resources>
