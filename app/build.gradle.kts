@@ -14,7 +14,7 @@ android {
         minSdk = 28
         targetSdk = 35
         versionCode = 1
-        versionName = "0.103"
+        versionName = "0.104"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -65,7 +65,6 @@ dependencies {
     implementation ("androidx.preference:preference-ktx:1.2.1")//
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
-
-//    compileOnly(files("libs/ecarx.jar"))
-//    compileOnly(files("libs/ecarx.adaptapi.jar"))
+    compileOnly(files("libs\\ecarx.adaptapi.jar"))
+    compileOnly(files("libs\\ecarx.jar"))
 }

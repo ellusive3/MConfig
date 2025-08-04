@@ -2,13 +2,6 @@ package ru.monjaro.mconfig
 
 import android.content.Context
 import android.content.Intent
-import android.os.Handler
-import android.os.Looper
-import androidx.preference.PreferenceManager
-import com.ecarx.xui.adaptapi.diminteraction.DimInteraction
-import com.ecarx.xui.adaptapi.diminteraction.IDimMenuInteraction
-import ecarx.dimprotocol.DIMProtocolManager
-import ru.monjaro.mconfig.KeysConfigReceiver.PackageData
 
 class BootService : android.content.BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?){

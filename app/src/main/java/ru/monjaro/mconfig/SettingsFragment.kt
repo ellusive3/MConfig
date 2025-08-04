@@ -227,8 +227,92 @@ class SettingsFragment : Fragment() {
             override fun onNothingSelected(p0: AdapterView<*>?) {
             }
         }
+
         preferences?.getInt(IdNames.autoholdFuncCfg_key, 1)?.let {
             spinnerAH?.setSelection(it)
+        }
+
+        // Летний режим стекол
+        val summer_mode_sw = view.findViewById<SwitchMaterial>(R.id.summer_mode_switch)
+        summer_mode_sw?.setOnCheckedChangeListener { _, isChecked ->
+            val window_pos_spinner = view.findViewById<Spinner>(R.id.summer_mode_windows_values_sp)
+            val fl_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_fl_switch)
+            val fr_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_fr_switch)
+            val rl_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_rl_switch)
+            val rr_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_rr_switch)
+            window_pos_spinner.isClickable = isChecked
+            fl_switch.isEnabled = isChecked
+            fr_switch.isEnabled = isChecked
+            rl_switch.isEnabled = isChecked
+            rr_switch.isEnabled = isChecked
+            preferences?.edit()?.putBoolean(IdNames.summer_mode_windows_key, isChecked)?.apply()
+        }
+        preferences?.getBoolean(IdNames.summer_mode_windows_key, true)?.let {
+            summer_mode_sw?.isChecked = it
+        }
+
+        val summer_mode_fl_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_fl_switch)
+        summer_mode_fl_switch?.setOnCheckedChangeListener { _, isChecked ->
+            if (preferences?.getBoolean(IdNames.summer_mode_fl_key, false) != isChecked) {
+                preferences?.edit()?.putBoolean(IdNames.summer_mode_fl_key, isChecked)?.apply()
+            }
+        }
+        preferences?.getBoolean(IdNames.summer_mode_fl_key, true)?.let {
+            summer_mode_fl_switch?.isChecked = it
+        }
+        val summer_mode_fr_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_fr_switch)
+        summer_mode_fr_switch?.setOnCheckedChangeListener { _, isChecked ->
+            if (preferences?.getBoolean(IdNames.summer_mode_fr_key, false) != isChecked) {
+                preferences?.edit()?.putBoolean(IdNames.summer_mode_fr_key, isChecked)?.apply()
+            }
+        }
+        preferences?.getBoolean(IdNames.summer_mode_fr_key, true)?.let {
+            summer_mode_fr_switch?.isChecked = it
+        }
+        val summer_mode_rl_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_rl_switch)
+        summer_mode_rl_switch?.setOnCheckedChangeListener { _, isChecked ->
+            if (preferences?.getBoolean(IdNames.summer_mode_rl_key, false) != isChecked) {
+                preferences?.edit()?.putBoolean(IdNames.summer_mode_rl_key, isChecked)?.apply()
+            }
+        }
+        preferences?.getBoolean(IdNames.summer_mode_rl_key, true)?.let {
+            summer_mode_rl_switch?.isChecked = it
+        }
+        val summer_mode_rr_switch = view.findViewById<SwitchMaterial>(R.id.summer_mode_rr_switch)
+        summer_mode_rr_switch?.setOnCheckedChangeListener { _, isChecked ->
+            if (preferences?.getBoolean(IdNames.summer_mode_rr_key, false) != isChecked) {
+                preferences?.edit()?.putBoolean(IdNames.summer_mode_rr_key, isChecked)?.apply()
+            }
+        }
+        preferences?.getBoolean(IdNames.summer_mode_rr_key, true)?.let {
+            summer_mode_rr_switch?.isChecked = it
+        }
+
+        val spinnerSMPos = view.findViewById<Spinner>(R.id.summer_mode_windows_values_sp)
+        spinnerSMPos.adapter = ArrayAdapter<CharSequence>(
+            context,
+            R.layout.spinner_text_item,
+            resources.getStringArray(R.array.summer_mode_windows_values)
+        )
+        spinnerSMPos?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parentView: AdapterView<*>?,
+                selectedItemView: View?,
+                position: Int,
+                id: Long
+            ) {
+                if (preferences?.getInt(IdNames.summer_mode_glass_pos, 0) != position) {
+                    // TODO сделать получение позиции окна int из выпадающего списка
+                    preferences?.edit()?.putInt(IdNames.summer_mode_glass_pos, position)?.apply()
+                }
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+            }
+        }
+
+        preferences?.getInt(IdNames.summer_mode_glass_pos, 1)?.let {
+            spinnerSMPos?.setSelection(it)
         }
 
         val rdmSwitch = view.findViewById<SwitchMaterial>(R.id.restoreDriveModeSwitch)

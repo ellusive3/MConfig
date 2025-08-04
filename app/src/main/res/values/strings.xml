@@ -20,6 +20,7 @@
     <string name="seat_pass_status_dot">Сиденье пассажира:</string>
     <string name="gear_status_dot">Передача КПП:</string>
     <string name="dayNight_dot">Режим освещения:</string>
+    <string name="enable_summer_windows_mode">Режим проветривания</string>
 
 
     <string name="import_settings">Импорт настроек из папки Downloads</string>
@@ -147,6 +148,11 @@
     <string name="app_start_display_settings">Дисплей</string>
 
     <string name="volume_onstart_settings">Громкость мультимедиа при старте ГУ</string>
+    <string name="summer_mode_windows_settings">Положение стекол %</string>
+    <string name="summer_mode_fl_window_settings">Открывать переднее левое окно</string>
+    <string name="summer_mode_fr_window_settings">Открывать переднее правое окно</string>
+    <string name="summer_mode_rl_window_settings">Открывать заднее левое окно</string>
+    <string name="summer_mode_rr_window_settings">Открывать заднее правое окно</string>
 
     <string-array name="spinnerItemsOnOff">
         <item>---</item>
@@ -154,6 +160,20 @@
         <item>Включен всегда</item>
         <item>Выключен при старте</item>
         <item>Включен при старте</item>
+    </string-array>
+
+    <string-array name="summer_mode_windows_values">
+        <item>100</item>
+        <item>90</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+        <item>10</item>
+        <item>0</item>
     </string-array>
 
     <string-array name="spinnerItemsSRC_1Click">
@@ -483,5 +503,4 @@
         <item>38</item>
         <item>39</item>
     </string-array>
-
 </resources>

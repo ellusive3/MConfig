@@ -8,6 +8,7 @@ import android.os.HandlerThread
 import android.os.Looper
 import android.os.Message
 import android.os.SystemClock
+import android.util.Log
 import androidx.preference.PreferenceManager
 import com.ecarx.xui.adaptapi.FunctionStatus
 import com.ecarx.xui.adaptapi.car.Car
@@ -71,6 +72,7 @@ import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.IGNITION_STATE_START
 import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.SEAT_OCCUPATION_STATUS_FAULT
 import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.SEAT_OCCUPATION_STATUS_NONE
 import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.SEAT_OCCUPATION_STATUS_OCCUPIED
+import com.ecarx.xui.adaptapi.car.vehicle.Bcm
 import com.ecarx.xui.adaptapi.car.vehicle.IBcm.BCM_FUNC_DOOR
 import com.ecarx.xui.adaptapi.car.vehicle.IBcm.BCM_FUNC_WINDOW_POS
 import com.ecarx.xui.adaptapi.car.vehicle.IDayMode.SETTING_FUNC_BRIGHTNESS_DAYMODE
@@ -172,7 +174,10 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
         //preferences config
         private var startstopFuncCfg:Int = ItemsOnOffPlus.NOT_USED.value
         private var autoholdFuncCfg:Int = ItemsOnOffPlus.NOT_USED.value
+        private var summer_mode_glass_pos:Int = 100
         private var driveModeRestoreCfg:Boolean = false
+
+        private var summerMode: Boolean = false
         private var brightnessReverseCfg:Boolean = false
         private var driveModeCfg:Int = DRIVE_MODE_SELECTION_COMFORT
         private var climateOffBlockFlag:AtomicBoolean = AtomicBoolean(true)
@@ -478,11 +483,20 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
                         }
                         autoholdFuncCfg = v
                     }
+
+                    IdNames.summer_mode_glass_pos -> {
+                        val v = sharedPreferences.getInt(key, 0)
+                        summer_mode_glass_pos = v
+                    }
+
                     "driveModeCfg"  -> {
                         driveModeCfg = sharedPreferences.getInt(key, DRIVE_MODE_SELECTION_COMFORT)
                     }
                     IdNames.restoreDriveMode_key -> {
                         driveModeRestoreCfg = sharedPreferences.getBoolean(key, false)
+                    }
+                    IdNames.summer_mode_windows_key -> {
+                        summerMode = sharedPreferences.getBoolean(key, false);
                     }
 
                     IdNames.elkaDisable_key -> {
@@ -775,15 +789,18 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
             for (i in 0 until 3) {
                 if (isICarFunctionAvailable(type)) {
                     setFunctionValue(type, value)
- //                   sendMessageToUI(IdNames.TOAST, "$type, v: $value")
+                    //sendMessageToUI(IdNames.TOAST, "$type, v: $value")
                     for (j in 0 until 2){
                         Thread.sleep((200+100*j).toLong())
                         val ret = getFunctionValue(type)
                         if (ret == value) {
+                            sendMessageToUI(IdNames.TOAST, "Successfully set value ($value) to the function $type")
                             return
                         }
                     }
+                    sendMessageToUI(IdNames.ERROR, "Cannot set value ($value) to the function $type")
                 }else{
+                    sendMessageToUI(IdNames.TOAST, "Unsupported function $type")
                     Thread.sleep(200)
                 }
             }

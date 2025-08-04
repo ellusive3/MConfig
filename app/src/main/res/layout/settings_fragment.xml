@@ -105,10 +105,6 @@
 
             </TableRow>
 
-            <View
-                style="@style/LineViewStyle"
-                />
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -128,6 +124,180 @@
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
                     android:text="@string/autohold_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <View
+                style="@style/LineViewStyle"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/summer_mode_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/summer_mode_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/enable_summer_windows_mode"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/summer_mode_windows_values_sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerStyle"
+                    android:entries='@array/summer_mode_windows_values' />
+
+                <TextView
+                    android:id="@+id/summer_mode_pos_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/summer_mode_windows_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/summer_mode_fl_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:enabled="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sm_fl_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/summer_mode_fl_window_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/summer_mode_fr_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:enabled="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sm_fr_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/summer_mode_fr_window_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/summer_mode_rl_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:enabled="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sm_rl_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/summer_mode_rl_window_settings"
+                    tools:ignore="RtlSymmetry" />
+
+            </TableRow>            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/summer_mode_rr_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:enabled="false"
+                        style="@style/switchStyle"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sm_rr_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/summer_mode_rr_window_settings"
                     tools:ignore="RtlSymmetry" />
 
             </TableRow>
