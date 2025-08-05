@@ -33,6 +33,7 @@ class IdNames  {
         val summer_mode_rl_key: String = "summer_mode_rl_enabled"
         val summer_mode_rr_key: String = "summer_mode_rr_enabled"
         val summer_mode_glass_pos: String = "summer_mode_glass_pos"
+        val summer_mode_glass_value: String = "summer_mode_glass_value"
         val restoreDriveMode_key: String = "restoreDriveMode"
         val elkaDisable_key: String = "elkaDisable"
         val brightnessReverse_key: String = "brightnessReverse"

@@ -8,7 +8,6 @@ import android.os.HandlerThread
 import android.os.Looper
 import android.os.Message
 import android.os.SystemClock
-import android.util.Log
 import androidx.preference.PreferenceManager
 import com.ecarx.xui.adaptapi.FunctionStatus
 import com.ecarx.xui.adaptapi.car.Car
@@ -72,7 +71,6 @@ import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.IGNITION_STATE_START
 import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.SEAT_OCCUPATION_STATUS_FAULT
 import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.SEAT_OCCUPATION_STATUS_NONE
 import com.ecarx.xui.adaptapi.car.sensor.ISensorEvent.SEAT_OCCUPATION_STATUS_OCCUPIED
-import com.ecarx.xui.adaptapi.car.vehicle.Bcm
 import com.ecarx.xui.adaptapi.car.vehicle.IBcm.BCM_FUNC_DOOR
 import com.ecarx.xui.adaptapi.car.vehicle.IBcm.BCM_FUNC_WINDOW_POS
 import com.ecarx.xui.adaptapi.car.vehicle.IDayMode.SETTING_FUNC_BRIGHTNESS_DAYMODE
@@ -174,10 +172,14 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
         //preferences config
         private var startstopFuncCfg:Int = ItemsOnOffPlus.NOT_USED.value
         private var autoholdFuncCfg:Int = ItemsOnOffPlus.NOT_USED.value
-        private var summer_mode_glass_pos:Int = 100
+        private var summer_mode_glass_value:Int = 100
         private var driveModeRestoreCfg:Boolean = false
 
         private var summerMode: Boolean = false
+        private var summer_mode_fl: Boolean = false
+        private var summer_mode_fr: Boolean = false
+        private var summer_mode_rl: Boolean = false
+        private var summer_mode_rr: Boolean = false
         private var brightnessReverseCfg:Boolean = false
         private var driveModeCfg:Int = DRIVE_MODE_SELECTION_COMFORT
         private var climateOffBlockFlag:AtomicBoolean = AtomicBoolean(true)
@@ -484,9 +486,26 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
                         autoholdFuncCfg = v
                     }
 
-                    IdNames.summer_mode_glass_pos -> {
-                        val v = sharedPreferences.getInt(key, 0)
-                        summer_mode_glass_pos = v
+                    IdNames.summer_mode_glass_value -> {
+                        val v = sharedPreferences.getInt(key, 100)
+                        //Запоминаем положение стекол при проветривании
+                        summer_mode_glass_value = v
+                    }
+                    IdNames.summer_mode_fl_key -> {
+                        val v = sharedPreferences.getBoolean(key, false)
+                        summer_mode_fl = v
+                    }
+                   IdNames.summer_mode_fr_key -> {
+                        val v = sharedPreferences.getBoolean(key, false)
+                        summer_mode_fr = v
+                    }
+                   IdNames.summer_mode_rl_key -> {
+                        val v = sharedPreferences.getBoolean(key, false)
+                        summer_mode_rl = v
+                    }
+                   IdNames.summer_mode_rr_key -> {
+                        val v = sharedPreferences.getBoolean(key, false)
+                        summer_mode_rr = v
                     }
 
                     "driveModeCfg"  -> {
@@ -896,6 +915,12 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
             passDisplayOnOffFlag = 0
             changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.gearReverseSpeedCfg_key)
             changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.gearReverseTimeCfg_key)
+            changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.summer_mode_windows_key)
+            changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.summer_mode_glass_value)
+            changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.summer_mode_fl_key)
+            changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.summer_mode_fr_key)
+            changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.summer_mode_rl_key)
+            changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.summer_mode_rr_key)
             //climate
             changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.climateGCleanCfg_key)
             changesPreferences!!.onSharedPreferenceChanged(preferences!!, IdNames.climateStartCfg_key)
@@ -1235,6 +1260,19 @@ class MConfigManager(applicationContext: Context, handler: Handler?) {
                             }
                         } else {
                             autoholdFuncTimestamp = System.currentTimeMillis()
+                        }
+
+                        // Проветривание окон
+                        if (summerMode && ignitionStateValue == IGNITION_STATE_LOCK) {
+                            // TODO сделать активацию проветривания окон при закрытии авто
+                            sendMessageToUI(
+                                IdNames.TOAST,
+                                "SummerMode. Set windows to the necessity position"
+                            )
+                            setFunctionValue(
+                                SETTING_FUNC_WINDSCREEN_SERVICE_POSITION,
+                                1
+                            )
                         }
 
                         //RestoreDrivingMode

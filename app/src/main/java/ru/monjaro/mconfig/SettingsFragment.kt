@@ -302,7 +302,8 @@ class SettingsFragment : Fragment() {
                 id: Long
             ) {
                 if (preferences?.getInt(IdNames.summer_mode_glass_pos, 0) != position) {
-                    // TODO сделать получение позиции окна int из выпадающего списка
+                    val selectedItemStrValue = parentView?.getItemAtPosition(position).toString().toInt()
+                    preferences?.edit()?.putInt(IdNames.summer_mode_glass_value, selectedItemStrValue)?.apply()
                     preferences?.edit()?.putInt(IdNames.summer_mode_glass_pos, position)?.apply()
                 }
             }
